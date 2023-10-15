@@ -1,0 +1,10 @@
+@import './sass/variables';
+@import './sass/utilities';
+@import './sass/base';
+@import './sass/mediaqueries';
+
+// page segments styles
+@import './sass/segments/header';
+@import './sass/segments/main';
+@import './sass/segments/featured-article';
+@import './sass/segments/category-list';

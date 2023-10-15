@@ -1,0 +1,22 @@
+.featured-article {
+  background-color: $color-light;
+  padding: $gutter-min;
+  border-radius: $gutter-ultra-min;
+  align-self: flex-start;
+
+  & h2 {
+    margin-bottom: $gutter-ultra-min;
+  }
+
+  & img {
+    width: 100%;
+    border: 1px solid $color-grey-light;
+    padding: $gutter-ultra-min;
+  }
+
+  &__details {
+    display: flex;
+    gap: $gutter-ultra-min;
+    margin: $gutter-ultra-min 0;
+  }
+}

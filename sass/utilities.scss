@@ -1,0 +1,52 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.font-accent {
+  font-family: $font-accent;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.text-title {
+  font-size: $text-title;
+}
+
+.text-small {
+  font-size: $text-small;
+}
+
+.text-small-semibold {
+  font-size: $text-small;
+  font-weight: 500;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.toggle-bars {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  span:nth-child(2) {
+    transform: translateX(5px);
+    visibility: hidden;
+  }
+
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+.toggle-nav {
+  transform: translateX(0) !important;
+}

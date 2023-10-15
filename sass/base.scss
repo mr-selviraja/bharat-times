@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-regular;
+  line-height: 1.6;
+  font-size: $text-normal;
+  background: $color-grey-dark;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-nav-toggle {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  display: none;
+  z-index: 10 !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & span {
+    display: block;
+    background-color: $color-dark;
+    height: 0.25rem;
+    width: 3rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.category-section {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: $gutter-min;
+}
+
+.aside {
+  flex: 0 0 auto; /* Disable shrinking and growing */
+  width: 30rem; /* Set a fixed width for the second item */
+  min-width: 0; /* Override any minimum width constraint */
+
+  display: flex;
+  flex-direction: column;
+  gap: $gutter-min;
+}
+
+.aside-section {
+  background-color: $color-light;
+  padding: $gutter-min;
+  border-radius: calc($gutter-min / 2);
+  width: 100%;
+  z-index: -1;
+
+  & h3 {
+    margin-bottom: $gutter-ultra-min;
+  }
+
+  &__article {
+    border-bottom: 1px solid $color-grey-dark;
+    padding-bottom: $gutter-ultra-min;
+    margin-bottom: $gutter-ultra-min;
+  }
+
+  &__article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.hr-rule {
+  border-bottom: 1px solid $color-grey-dark;
+}
+
+.latest-section {
+  position: sticky;
+  top: 23%;
+}
+
+.popular-section {
+  position: sticky;
+  top: 55%;
+}
