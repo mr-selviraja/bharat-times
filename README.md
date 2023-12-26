@@ -21,11 +21,11 @@
 
 [Live Demo] - https://mr-selviraja.github.io/bharat-times/
 
-![Bharat Times Mobile Preview](/images/bharat-times__mobile.png)
+![Bharat Times Mobile Preview](/assets/bharat-times__mobile.png)
 
-![Bharat Times Tablet Preview](/images/bharat-times__tablet.png)
+![Bharat Times Tablet Preview](/assets/bharat-times__tablet.png)
 
-![Bharat Times Desktop Preview](/images/bharat-times__desktop.png)
+![Bharat Times Desktop Preview](/assets/bharat-times__desktop.png)
 
 
 ## Built With
