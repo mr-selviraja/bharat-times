@@ -270,9 +270,12 @@ a {
   flex-direction: row-reverse;
   gap: 2.5rem;
   align-items: center;
+  padding: 2.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
 }
 .category-article:last-child {
   margin-bottom: 0;

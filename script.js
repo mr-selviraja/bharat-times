@@ -1,6 +1,6 @@
 const btnNavToggle = document.querySelector('.btn-nav-toggle');
 const categorySectionEl = document.querySelector('.category-section');
-let currentCategoryName = 'general';
+let currentCategoryName = 'sports';
 const currentCategoryArticles = [];
 
 // Toggle adding classes to animate nav toggling
@@ -133,3 +133,25 @@ const fetchCategoryArticles = async (category) => {
 };
 
 fetchCategoryArticles(currentCategoryName);
+
+// Adding handlers to nav links to fetch repective news articles
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+  // Select all anchor elements with the data-content attribute
+  let anchorElements = document.querySelectorAll('a[data-content]');
+
+  // Iterate over the NodeList
+  anchorElements.forEach(function (anchor) {
+    // Add click event listener to each anchor
+    anchor.addEventListener('click', function (event) {
+      // Prevent the default behavior of anchor to avoid page refresh
+      event.preventDefault();
+
+      // Get the data-content attribute value
+      let category = anchor.getAttribute('data-content');
+
+      // Call fetchCategoryArticles with the category
+      fetchCategoryArticles(category);
+    });
+  });
+});

@@ -13,9 +13,12 @@
   flex-direction: row-reverse;
   gap: $gutter-min;
   align-items: center;
+  padding: $gutter-min;
   padding-bottom: $gutter-ultra-min;
   border-bottom: 1px solid $color-grey-dark;
   margin-bottom: $gutter-min;
+  background-color: white;
+  border-radius: 0.5rem;
 
   &:last-child {
     margin-bottom: 0;
