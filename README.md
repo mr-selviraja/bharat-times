@@ -6,15 +6,6 @@
 - News can be switch to different genre based on the clicked link in the Navigation.
 - Gives a feel of SPA since all these UI changes are being displayed on a single page even with nav links click.
 
-jusDoo is a simple and intuitive todo list app built as part of learning JavaScript. With jusDoo you can: 
-- Add a task
-- Mark a task as completed(strikes out)
-- Delete a task
-- Takes in and remembers your name
-
-jusDoo can be a simple companion for one liner todos as it can remembers(data persists) through the
-use of local storage Web API.
-
 
 ## Table of Contents
 
